@@ -7,7 +7,7 @@ var symbol2 = ["#", "@", "^", "!", "$", "%", "&", "*", ">"];
 var symbol = symbol1.concat(symbol2);
 
 
-var symbol = null;
+var symbolRet = null;
 
 
 var biggerText = document.getElementById("biggerText");
@@ -50,14 +50,14 @@ function randomSym() {
     var symString = "";
     var numberNine = symbol[Math.floor(Math.random() * symbol.length)];
 
-    for (var i = 0; i < symbol.length; i++) {
+    for (var i = 0; i < 100; i++) {
 
         if (i % 9 == 0) {
             symString = symString + i + " - " + numberNine + "<br/>";
         } else {
             var random = symbol[Math.floor(Math.random() * symbol.length)];
             symString = symString + i + " - " + random + "<br/>";
-            symbol = numberNine;
+            symbolRet = numberNine;
         }
     }
     return symString;
@@ -111,11 +111,11 @@ function changeState() {
             hide(startButton);
             break;
         default:
-            biggerText.innerHTML = symbol;
+            biggerText.innerHTML = symbolRet;
             hide(nextButton);
             hide(revButton);
             show(smallText);
-            smallText.innerHTML="Your symbol is: <br/>" + symbol;
+            smallText.innerHTML="Your symbol is: <br/>" + symbolRet;
             show(resetButton);
             hide(startButton);
             break;

@@ -9,7 +9,7 @@
 #biggerText {
     float: center;
     top: 400px; /* Header Height */
-    bottom: 20px; /* Footer Height */
+    bottom: 200px; /* Footer Height */
     width: 75%;
 
 }
@@ -23,4 +23,8 @@
     float: right;
     background-color: lightblue;
     color: DarkBlue;
+}
+#Row1{
+    height: 25%
+
 }
