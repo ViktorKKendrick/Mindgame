@@ -19,3 +19,8 @@
     width: 75%;
 
 }
+#startButton {
+    float: right;
+    background-color: lightblue;
+    color: DarkBlue;
+}
