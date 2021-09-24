@@ -1,0 +1,21 @@
+#nextButton {
+    float: 50%;
+    background-color:lightblue;
+    margin-top: 24%;
+    width: 30%;
+    height: 25%;
+}
+
+#biggerText {
+    float: center;
+    top: 400px; /* Header Height */
+    bottom: 20px; /* Footer Height */
+    width: 75%;
+
+}
+#smallText {
+    float: center;
+    height: 15%;
+    width: 75%;
+
+}
